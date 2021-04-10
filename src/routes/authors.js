@@ -2,6 +2,7 @@ const express = require('express');
 const { ObjectId } = require("mongodb")
 const { Author, validate } = require('../models/author')
 const router = express.Router();
+const auth = require('../../middleware/auth');
 
 router.get('/', async (req, res) => {
     const authors = await Author.find();
@@ -16,7 +17,7 @@ router.get('/:id', async (req, res) => {
     res.send(author);
 })
 
-router.post('/', async (req, res) => {
+router.post('/', auth, async (req, res) => {
     const { error } = validate(req.body);
     if (error) return res.status(400).send(error.details[0].message);
 
@@ -25,7 +26,7 @@ router.post('/', async (req, res) => {
     res.send(author);
 });
 
-router.put('/:id', async (req, res) => {
+router.put('/:id', auth, async (req, res) => {
     const { error } = validate(req.body);
     if (error) return res.status(400).send(error.details[0].message);
     const isValidId = ObjectId.isValid(req.params.id)
@@ -34,7 +35,7 @@ router.put('/:id', async (req, res) => {
     if (!author) return res.status(404).send('The author with given is is not exist')
 });
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', auth, async (req, res) => {
     const isValidId = ObjectId.isValid(req.params.id)
     if (!isValidId) return res.status(400).send('Id is invalid')
     const author = await Author.findByIdAndRemove(req.params.id);

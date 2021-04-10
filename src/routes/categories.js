@@ -1,7 +1,8 @@
 const { Category, validate } = require('../models/category')
 const { ObjectId } = require('mongodb')
-const express = require('express')
-const router = express.Router()
+const express = require('express');
+const router = express.Router();
+const auth = require('../../middleware/auth');
 
 
 router.get('/', async (req, res) => {
@@ -17,7 +18,7 @@ router.get('/:id', async (req, res) => {
     res.send(category);
 })
 
-router.post('/', async (req, res) => {
+router.post('/', auth, async (req, res) => {
     const { error } = validate(req.body)
     if (error) return res.status(400).send(error.details[0].message)
     let category = new Category({ name: req.body.name })
@@ -25,7 +26,7 @@ router.post('/', async (req, res) => {
     res.send(category)
 })
 
-router.put('/:id', async (req, res) => {
+router.put('/:id', auth, async (req, res) => {
     const { error } = validate(req.body)
     if (error) return res.status(400).send(errors.details[0].message)
     const isValidId = ObjectId.isValid(req.params.id)
@@ -35,7 +36,7 @@ router.put('/:id', async (req, res) => {
     res.send(category)
 })
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', auth, async (req, res) => {
     const isValidId = ObjectId.isValid(req.params.id)
     if (!isValidId) return res.status(400).send('Id is invalid')
     const category = await Category.findByIdAndRemove(req.params.id)

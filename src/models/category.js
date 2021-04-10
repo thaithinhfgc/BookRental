@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Joi = require('joi')
+const auth = require('../../middleware/auth')
 
 const categorySchema = new mongoose.Schema({
     name: {
