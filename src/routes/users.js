@@ -5,7 +5,7 @@ const router = express.Router();
 const _ = require('lodash');
 const bcrypt = require('bcryptjs');
 const { User, validate } = require('../models/user');
-const auth = require('../../middleware/auth')
+const auth = require('../../middleware/auth');
 
 
 router.get('/me', auth, async (req, res) => {

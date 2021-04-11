@@ -5,7 +5,8 @@ const { Book, validate } = require('../models/book')
 const { Category } = require('../models/category');
 const { Author } = require('../models/author');
 const auth = require('../../middleware/auth');
-const { ObjectId } = require("mongodb")
+const { ObjectId } = require("mongodb");
+const admin = require('../../middleware/admin');
 
 router.get('/', async (req, res) => {
     const books = await Book.find();
@@ -20,7 +21,7 @@ router.get('/:id', async (req, res) => {
     res.send(book);
 })
 
-router.post('/', auth, async (req, res) => {
+router.post('/', [auth, admin], async (req, res) => {
     const { error } = validate(req.body);
     if (error) return res.status(400).send(error.details[0].message);
 
@@ -48,7 +49,7 @@ router.post('/', auth, async (req, res) => {
     res.send(book);
 });
 
-router.put('/:id', auth, async (req, res) => {
+router.put('/:id', [auth, admin], async (req, res) => {
     const isValidId = ObjectId.isValid(req.params.id)
     if (!isValidId) return res.status(400).send('Book Id is invalid')
     const { error } = validate(req.body);
@@ -80,7 +81,7 @@ router.put('/:id', auth, async (req, res) => {
     res.send(book);
 });
 
-router.delete('/:id', auth, async (req, res) => {
+router.delete('/:id', [auth, admin], async (req, res) => {
     const isValidId = ObjectId.isValid(req.params.id)
     if (!isValidId) return res.status(400).send('book Id is invalid')
     const book = await Book.findByIdAndRemove(req.params.id);
