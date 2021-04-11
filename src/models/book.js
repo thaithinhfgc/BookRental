@@ -1,6 +1,8 @@
 const Joi = require('joi');
+Joi.objectId = require('joi-objectid')(Joi)
 const mongoose = require('mongoose');
 const { categorySchema } = require('./category');
+const { Author, authorSchema } = require('./author');
 
 const Book = mongoose.model(
     'Books',
@@ -16,10 +18,8 @@ const Book = mongoose.model(
         },
 
         author: {
-            type: String,
-            required: true,
-            minlength: 5,
-            maxlength: 30,
+            type: authorSchema,
+            required: true
         },
 
         currentAvailable: {
@@ -43,9 +43,9 @@ const Book = mongoose.model(
 
 function validateBook(book) {
     const schema = {
-        title: Joi.string(),
-        bookId: Joi.objectId().required(),
-        author: Joi.string().required(),
+        title: Joi.string().required(),
+        categoryId: Joi.objectId().required(),
+        authorId: Joi.objectId().required(),
         currentAvailable: Joi.number().min(0).required(),
         totalBook: Joi.number().min(0).required(),
         publishDay: Joi.date().required(),
