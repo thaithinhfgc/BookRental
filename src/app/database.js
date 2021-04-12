@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
+const winston = require('winston');
 
 mongoose
     .connect('mongodb://localhost/book', { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => console.log('Connected to MongoDB'))
-    .catch(() => console.log('Could not connect to mongoDB'));
+    .then(() => winston.info('Connected to MongoDB'));

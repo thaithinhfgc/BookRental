@@ -16,5 +16,5 @@ module.exports = function (app) {
     app.use('/api/auth', auth);
     app.use('/api/users', users);
     app.use('/api/books', books);
-    app.use(error);
+    app.use (error);
 };

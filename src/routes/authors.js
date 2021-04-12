@@ -7,7 +7,7 @@ const admin = require('../../middleware/admin');
 
 
 router.get('/', async (req, res) => {
-    throw new error();
+    throw new error('new Error');
     const authors = await Author.find();
     res.send(authors);
 })
