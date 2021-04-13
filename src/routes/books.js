@@ -5,7 +5,7 @@ const { Book, validate } = require('../models/book')
 const { Category } = require('../models/category');
 const { Author } = require('../models/author');
 const auth = require('../../middleware/auth');
-const { ObjectId } = require("mongodb");
+const validateObjectId = require('../../middleware/validateObjectId');
 const admin = require('../../middleware/admin');
 
 router.get('/', async (req, res) => {
@@ -13,20 +13,15 @@ router.get('/', async (req, res) => {
     res.send(books);
 });
 
-router.get('/:id', async (req, res) => {
-    const isValidId = ObjectId.isValid(req.params.id)
-    if (!isValidId) return res.status(400).send('Book Id is invalid');
+router.get('/:id', validateObjectId, async (req, res) => {
     const book = await Book.findById(req.params.id);
     if (!book) return res.status(404).send('The book with given Id is invalid.');
     res.send(book);
 })
 
-router.post('/', [auth, admin], async (req, res) => {
+router.post('/', [auth, admin], validateObjectId, async (req, res) => {
     const { error } = validate(req.body);
     if (error) return res.status(400).send(error.details[0].message);
-
-    const category = await Category.findById(req.body.categoryId);
-    if (!category) return res.status(400).send('Invalid category');
 
     const author = await Author.findById(req.body.authorId);
     if (!author) return res.status(400).send('Invalid author');
@@ -49,17 +44,16 @@ router.post('/', [auth, admin], async (req, res) => {
     res.send(book);
 });
 
-router.put('/:id', [auth, admin], async (req, res) => {
-    const isValidId = ObjectId.isValid(req.params.id)
-    if (!isValidId) return res.status(400).send('Book Id is invalid')
+router.put('/:id', [auth, admin], validateObjectId, async (req, res) => {
+
     const { error } = validate(req.body);
     if (error) return res.status(400).send(error.details[0].message);
 
     const category = await Category.findById(req.body.categoryId);
-    if (!category) return res.status(400).send('Invalid category');
+    if (!category) return res.status(404).send('Invalid category');
 
     const author = await Author.findById(req.body.authorId);
-    if (!author) return res.status(400).send('Invalid author');
+    if (!author) return res.status(404).send('Invalid author');
 
     const book = await Book.findByIdAndUpdate(req.params.id, {
         title: req.body.title,
@@ -81,9 +75,8 @@ router.put('/:id', [auth, admin], async (req, res) => {
     res.send(book);
 });
 
-router.delete('/:id', [auth, admin], async (req, res) => {
-    const isValidId = ObjectId.isValid(req.params.id)
-    if (!isValidId) return res.status(400).send('book Id is invalid')
+router.delete('/:id', [auth, admin], validateObjectId, async (req, res) => {
+
     const book = await Book.findByIdAndRemove(req.params.id);
     if (!book) return res.status(404).send('The book with given id not exist');
     res.send(book);

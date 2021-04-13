@@ -1,3 +1,4 @@
 {
-    "jwtPrivateKey": "book_jwtPrivateKey"
+    "jwtPrivateKey": "book_jwtPrivateKey",
+    "db": "mongodb://localhost/book"
 }

@@ -1,0 +1,92 @@
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T08:22:13.893Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T08:23:06.164Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T08:23:10.140Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T08:23:37.075Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T08:23:46.662Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T08:24:47.277Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book","timestamp":"2021-04-13T08:24:47.299Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T08:24:53.096Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book","timestamp":"2021-04-13T08:24:53.129Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T08:25:10.997Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T08:25:17.425Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book","timestamp":"2021-04-13T08:25:17.448Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:23:17.637Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:23:17.702Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:24:04.856Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:24:04.882Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:24:12.459Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:24:12.488Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:25:36.034Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:25:36.062Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:26:59.754Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:26:59.789Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:27:01.154Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:27:01.163Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:27:10.948Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:27:10.963Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:28:29.441Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:28:29.485Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:28:30.886Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:28:30.897Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:32:40.028Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:32:40.056Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:34:27.580Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:34:27.621Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:34:45.438Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:34:45.468Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:35:41.612Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:35:41.649Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:36:03.272Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:36:03.300Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:36:50.424Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:36:50.464Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:37:05.644Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:37:05.681Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:37:27.354Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:37:27.390Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:37:35.827Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:37:35.867Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:42:28.943Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:42:28.993Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:42:39.824Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:42:39.853Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:42:44.444Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:42:44.478Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:42:48.059Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:42:48.087Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:44:15.015Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:44:15.048Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:48:00.311Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:48:00.343Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:48:29.818Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:48:29.850Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:49:54.270Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:49:54.304Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:52:28.263Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:52:28.310Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:52:46.841Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:52:46.879Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:55:11.944Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:55:11.977Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:55:28.576Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:55:28.610Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:56:04.894Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:56:04.933Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:57:39.907Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:57:39.936Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T09:57:51.949Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T09:57:51.978Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T10:00:03.579Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book_test","timestamp":"2021-04-13T10:00:03.607Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T10:03:12.796Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book","timestamp":"2021-04-13T10:03:12.821Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T10:03:35.395Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book","timestamp":"2021-04-13T10:03:35.418Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T10:03:45.882Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book","timestamp":"2021-04-13T10:03:45.907Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T10:04:52.247Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book","timestamp":"2021-04-13T10:04:52.273Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T10:06:05.311Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book","timestamp":"2021-04-13T10:06:05.339Z"}
+{"level":"info","message":"Listening on port 3000","timestamp":"2021-04-13T10:06:09.086Z"}
+{"level":"info","message":"Connected to mongodb://localhost/book","timestamp":"2021-04-13T10:06:09.107Z"}
