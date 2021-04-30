@@ -18,7 +18,7 @@ router.get('/:id', validateObjectId, async (req, res) => {
     res.send(category);
 })
 
-router.post('/', [auth, admin], async (req, res) => {
+router.post('/', auth, async (req, res) => {
     const { error } = validate(req.body)
     if (error) return res.status(400).send(error.details[0].message)
     let category = new Category({ name: req.body.name })
@@ -26,7 +26,7 @@ router.post('/', [auth, admin], async (req, res) => {
     res.send(category)
 })
 
-router.put('/:id', [auth, admin], validateObjectId, async (req, res) => {
+router.put('/:id', auth, validateObjectId, async (req, res) => {
     const { error } = validate(req.body)
     if (error) return res.status(400).send(errors.details[0].message)
 

@@ -7,7 +7,7 @@
         "format": "prettier --write \"./**/*.js\" ",
         "start": "NODE_ENV=production node src/index.js",
         "start:dev": "NODE_ENV=development nodemon src/index.js",
-        "test": "jest --watchAll --verbose"
+        "test": "jest --watchAll --verbose --coverage"
     },
     "dependencies": {
         "bcryptjs": "^2.4.3",
